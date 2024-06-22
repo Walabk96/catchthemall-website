@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Them All</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+
+
+    <section class="header">
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+                
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>U.S. Best Cybersecurity Company</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit possimus odit exercitationem<br> voluptas earum, quod tempora ipsam magni dolor reiciendis doloremque, voluptatum corrupti explicabo eius facere sit at vel in.</p>
+                  
+        </div>
+
+    </section>
+
+    <!----Course---->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Video Training</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam sapiente totam voluptatibus <br>optio laudantium dolore velit eum, eius quisquam! Porro nam, suscipit numquam veritatis dignissimos vitae tempora. Mollitia, tempore?</p>
+                <a href="" class="hero-btn">Watch The Video</a>
+            </div>
+            <div class="course-col">
+                <h3>Test</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam sapiente totam voluptatibus <br>optio laudantium dolore velit eum, eius quisquam! Porro nam, suscipit numquam veritatis dignissimos vitae tempora. Mollitia, tempore?</p>
+                <a href="" class="hero-bttn">Click to take the test</a>
+            </div>
+        </div>
+
+
+    </section>
+ <!----About---->
+ <section class="about">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+
+    <div class="row">
+        <div class="about-col">
+            <h3>Services and Product</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam sapiente totam voluptatibus <br>optio laudantium dolore velit eum, eius quisquam! Porro nam, suscipit numquam veritatis dignissimos vitae tempora. Mollitia, tempore?</p>
+            
+        </div>
+        
+    </div>
+
+</section>
+
+
+<!-------JavaScript-------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+      
+
+    </script>
+</body>
+</html>
