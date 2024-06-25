@@ -6,6 +6,9 @@
     <title>Catch Them All</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+
+    
 </head>
 <body>
 
@@ -31,6 +34,7 @@
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
+            
         </nav>
 
         <div class="text-box">
@@ -58,7 +62,7 @@
             <div class="course-col">
                 <h3>Video Training</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam sapiente totam voluptatibus <br>optio laudantium dolore velit eum, eius quisquam! Porro nam, suscipit numquam veritatis dignissimos vitae tempora. Mollitia, tempore?</p>
-                <a href="" class="hero-btn">Watch The Video</a>
+                <a href="video.html" class="hero-btn">Watch The Video</a>
             </div>
             <div class="course-col">
                 <h3>Test</h3>
@@ -89,32 +93,33 @@
 
 
 <!-------JavaScript-------->
+<script>
+    const popup = document.querySelector('.popup');
+    const x = document.querySelector('.popup-content h1')
 
-    <script>
-        const popup = document.querySelector('.popup');
-        const x = document.querySelector('.popup-content h1')
+    window.addEventListener('load', () => {
+        popup.classList.add('showPopup');
+        popup.childNodes[1].classList.add('showPopup');
+    })
+    x.addEventListener('click', () => {
+        popup.classList.remove('showPopup');
+        popup.childNodes[1].classList.remove('showPopup');
+    })
+    var navLinks = document.getElementById("navLinks");
 
-        window.addEventListener('load', () => {
-            popup.classList.add('showPopup');
-            popup.childNodes[1].classList.add('showPopup');
-        })
-        x.addEventListener('click', () => {
-            popup.classList.remove('showPopup');
-            popup.childNodes[1].classList.remove('showPopup');
-        })
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-        
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
 
 
-      
+  
 
-    </script>
+</script>
+   
+   
 </body>
 </html>
