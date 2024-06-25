@@ -9,7 +9,14 @@
 </head>
 <body>
 
-
+<div class="popup">
+    <div class="popup-content">
+    <h1>X</h1>
+    <h2>Warning</h2>
+    <p>You could have been victim of a phishing attack and per your employer's cybersecurity policies you must now complete necessary training </p>
+    
+</div>
+    </div>
     <section class="header">
         <nav>
             
@@ -28,8 +35,15 @@
 
         <div class="text-box">
             <h1>U.S. Best Cybersecurity Company</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit possimus odit exercitationem<br> voluptas earum, quod tempora ipsam magni dolor reiciendis doloremque, voluptatum corrupti explicabo eius facere sit at vel in.</p>
-                  
+            <p>Everything you need to obtain a zero-incident rate<br>Focus on four key areas of security awareness training to ensure
+                your employees recognize every cyber threat and know how to handle it.</p>
+                
+                    <p>AUTOMATED SIMULATIONS</p>
+                    <p>1-Click Active Reporting</p>
+                    <p>TRAINING SESSIONS</p>
+                    <p>REAL-TIME THREAT ALERTS</p>
+                    
+               
         </div>
 
     </section>
@@ -37,7 +51,7 @@
     <!----Course---->
     <section class="course">
         <h1>Courses We Offer</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>The world's most advanced security awarness training.</p>
         
 
         <div class="row">
@@ -64,7 +78,8 @@
     <div class="row">
         <div class="about-col">
             <h3>Services and Product</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam sapiente totam voluptatibus <br>optio laudantium dolore velit eum, eius quisquam! Porro nam, suscipit numquam veritatis dignissimos vitae tempora. Mollitia, tempore?</p>
+            <p>Ready to improve security training in your organisation?</p>
+            <a href="" class="hero-bttn">Talk to our cycbersecurity export</a>
             
         </div>
         
@@ -76,6 +91,17 @@
 <!-------JavaScript-------->
 
     <script>
+        const popup = document.querySelector('.popup');
+        const x = document.querySelector('.popup-content h1')
+
+        window.addEventListener('load', () => {
+            popup.classList.add('showPopup');
+            popup.childNodes[1].classList.add('showPopup');
+        })
+        x.addEventListener('click', () => {
+            popup.classList.remove('showPopup');
+            popup.childNodes[1].classList.remove('showPopup');
+        })
         var navLinks = document.getElementById("navLinks");
 
         function showMenu(){
@@ -84,6 +110,7 @@
         function hideMenu(){
             navLinks.style.right = "-200px";
         }
+        
 
 
       
